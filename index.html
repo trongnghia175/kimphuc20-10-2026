@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lung linh tháng 10 ✨</title>
+<style>
+:root{--gold:#ffe5a0;--pink:#ff8dbb;--violet:#100d35}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;touch-action:pan-x pan-y}
+body{font-family:Georgia,"Times New Roman",serif;color:#ffe9c3;background:#100d35}
+.scene{position:relative;width:100%;height:100%;min-height:540px;overflow:hidden;isolation:isolate;background:
+ radial-gradient(ellipse at 50% 105%,rgba(255,107,151,.8),transparent 48%),
+ radial-gradient(ellipse at 20% 78%,rgba(154,57,130,.55),transparent 38%),
+ radial-gradient(ellipse at 80% 72%,rgba(255,183,98,.24),transparent 35%),
+ linear-gradient(180deg,#0d0b2c 0%,#201044 44%,#63265f 78%,#d75c91 110%)}
+.scene:before{content:"";position:absolute;inset:-40%;z-index:-2;background:repeating-conic-gradient(from 0deg at 50% 43%,rgba(255,213,151,.10) 0deg 1.4deg,transparent 1.4deg 10deg);animation:rays 75s linear infinite;mask-image:radial-gradient(ellipse at 50% 43%,#000 0%,transparent 68%)}
+.scene:after{content:"";position:absolute;inset:0;z-index:-1;opacity:.38;background-image:radial-gradient(1px 1px at 12% 19%,#fff 99%,transparent),radial-gradient(2px 2px at 78% 15%,#ffd7a1 99%,transparent),radial-gradient(1px 1px at 35% 61%,#fff 99%,transparent),radial-gradient(2px 2px at 89% 48%,#fff1c7 99%,transparent),radial-gradient(1px 1px at 61% 32%,#fff 99%,transparent);background-size:190px 180px,230px 210px,160px 170px,270px 240px,200px 190px}
+@keyframes rays{to{transform:rotate(360deg)}}
+.glow{position:absolute;border-radius:50%;filter:blur(22px);opacity:.6;pointer-events:none;animation:pulse 5s ease-in-out infinite alternate}
+.g1{width:130px;height:130px;background:#ffbb72;left:4%;bottom:7%}.g2{width:90px;height:90px;background:#c6a5ff;left:23%;bottom:17%;animation-delay:-2s}.g3{width:150px;height:150px;background:#ffca78;right:5%;bottom:16%;animation-delay:-3s}
+@keyframes pulse{to{transform:scale(1.35);opacity:.85}}
+.topline{position:absolute;top:18px;left:0;width:100%;text-align:center;font:500 13px Arial,sans-serif;letter-spacing:1px;color:#ffe6b5;text-shadow:0 0 12px #ffcb78}
+.hero{position:absolute;top:15%;left:50%;transform:translateX(-50%);width:min(680px,95vw);text-align:center;z-index:2}
+.kicker{font-style:italic;font-size:clamp(17px,2.2vw,28px);font-weight:bold;color:#ffe8ad;text-shadow:0 0 10px #ffbb65,0 2px 3px #451844}
+.clock{font-size:clamp(54px,8vw,100px);font-weight:bold;line-height:1.12;letter-spacing:3px;background:linear-gradient(#fff4c9 10%,#ffcf71 45%,#b86d3b 70%,#fff0bc);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 12px rgba(255,199,104,.45));margin:8px 0}
+.subtitle{font:600 10px Arial,sans-serif;letter-spacing:5px;color:#ffe4c5;text-transform:uppercase}
+.big-heart{position:absolute;left:calc(50% + 105px);top:4px;width:110px;height:100px;filter:drop-shadow(0 0 7px #ffd887);animation:heartbeat 3s ease-in-out infinite}
+.big-heart svg{width:100%;height:100%;overflow:visible}
+@keyframes heartbeat{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.08);opacity:1}}
+.word{position:absolute;font-style:italic;font-size:clamp(13px,1.5vw,20px);font-weight:bold;color:#ffe8bd;text-shadow:0 0 10px #ffb56e,0 0 2px #fff;white-space:nowrap;animation:wordglow 3.5s ease-in-out infinite alternate}
+@keyframes wordglow{to{filter:brightness(1.45);text-shadow:0 0 15px #ffca87}}
+.w1{left:4%;top:43%}.w2{left:7%;top:57%}.w3{left:5%;top:73%}.w4{right:6%;top:42%}.w5{right:9%;top:53%}.w6{right:7%;top:68%}.w7{left:12%;top:31%}.w8{right:14%;top:29%}
+.floating{position:absolute;bottom:-50px;left:var(--x);font-size:var(--s);color:var(--c);opacity:0;filter:drop-shadow(0 0 7px currentColor);animation:floatUp var(--d) linear var(--delay) infinite;pointer-events:none}
+@keyframes floatUp{0%{transform:translate3d(0,0,0) rotate(-12deg) scale(.7);opacity:0}10%{opacity:var(--o)}50%{transform:translate3d(var(--drift),-52vh,0) rotate(18deg) scale(1)}90%{opacity:var(--o)}100%{transform:translate3d(calc(var(--drift)*-.6),-112vh,0) rotate(-24deg) scale(.75);opacity:0}}
+.card{position:absolute;z-index:3;bottom:7%;left:50%;transform:translateX(-50%);width:min(390px,84vw);padding:18px 22px 15px;border:1px solid rgba(255,214,179,.38);border-radius:17px;text-align:center;background:linear-gradient(145deg,rgba(43,17,65,.84),rgba(62,24,72,.72));box-shadow:0 0 28px rgba(255,173,193,.16),inset 0 0 18px rgba(255,206,169,.04);backdrop-filter:blur(7px);font-family:Arial,sans-serif}
+.card h2{margin:0 0 8px;color:#ffdf9c;font-family:Georgia,serif;font-size:20px;font-style:italic;text-shadow:0 0 9px #ffb86b}
+.card p{font-size:12px;line-height:1.65;color:#fff3e7;margin:5px 0}
+.card .signature{margin-top:9px;color:#e8b6d7;font-size:11px;font-style:italic}
+.little-heart{position:absolute;left:calc(50% - 245px);bottom:26%;font-size:43px;color:#ffc1d5;filter:drop-shadow(0 0 9px #ff85ba);animation:heartbeat 2s infinite}
+.counter{position:absolute;bottom:2%;right:2%;font:10px Arial,sans-serif;color:#ffdfc2;opacity:.65}
+
+#passwordGate{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:22px;background:radial-gradient(ellipse at 50% 40%,#43205f 0%,#191035 48%,#09091e 100%);font-family:Arial,sans-serif}
+#passwordGate::before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,220,170,.08) 0deg 1deg,transparent 1deg 12deg);mask-image:radial-gradient(ellipse at center,#000,transparent 72%);animation:rays 70s linear infinite}
+.password-box{position:relative;width:min(390px,100%);padding:34px 28px 30px;text-align:center;border:1px solid rgba(255,220,190,.35);border-radius:24px;background:rgba(31,17,55,.78);box-shadow:0 0 45px rgba(255,140,190,.2),inset 0 0 24px rgba(255,220,190,.05);backdrop-filter:blur(12px);animation:gateIn .8s cubic-bezier(.2,.8,.2,1) both}
+@keyframes gateIn{from{opacity:0;transform:translateY(20px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+.password-icon{font-size:42px;margin-bottom:12px;filter:drop-shadow(0 0 12px #ff9ecb)}
+.password-box h1{font:italic bold 27px Georgia,serif;color:#ffe2a1;margin:0 0 9px;text-shadow:0 0 15px #ffb96b}
+.password-box .gate-sub{font-size:13px;line-height:1.6;color:#f6ddec;margin:0 0 22px}
+.password-row{display:flex;gap:9px}
+#passwordInput{min-width:0;flex:1;border:1px solid rgba(255,220,190,.35);border-radius:12px;background:rgba(255,255,255,.08);padding:13px 14px;color:#fff;text-align:center;letter-spacing:8px;font-size:19px;outline:none}
+#passwordInput:focus{border-color:#ffb6d7;box-shadow:0 0 0 3px rgba(255,150,200,.12)}
+#nextButton{border:0;border-radius:12px;padding:0 17px;font-weight:bold;color:#35133f;background:linear-gradient(135deg,#fff0bd,#ff9fc9);cursor:pointer;transition:transform .2s,filter .2s}
+#nextButton:hover{transform:translateY(-2px);filter:brightness(1.08)}
+#passwordError{min-height:18px;margin:12px 0 0;color:#ffacc7;font-size:12px}
+#scene.locked{visibility:hidden}
+#scene.unlocked{animation:sceneIn 1s ease both}
+@keyframes sceneIn{from{opacity:0;filter:blur(5px)}to{opacity:1;filter:blur(0)}}
+.card h2,.card p,.card .signature{opacity:0;transform:translateY(12px);filter:blur(3px)}
+.card.show-words h2{animation:wordAppear .8s ease forwards}
+.card.show-words p:nth-of-type(1){animation:wordAppear .85s ease .55s forwards}
+.card.show-words p:nth-of-type(2){animation:wordAppear .85s ease 1.45s forwards}
+.card.show-words .signature{animation:wordAppear .85s ease 2.25s forwards}
+@keyframes wordAppear{to{opacity:1;transform:translateY(0);filter:blur(0)}}
+
+@media(max-width:600px){.hero{top:18%}.big-heart{left:calc(50% + 80px);width:70px}.word{font-size:12px}.w1{left:2%}.w4{right:2%}.w2{left:3%}.w5{right:3%}.card{bottom:6%;padding:14px 16px}.little-heart{left:8%;bottom:30%;font-size:30px}.topline{top:10px}}
+</style>
+</head>
+<body>
+<section id="passwordGate" aria-label="Màn hình nhập mật khẩu">
+  <div class="password-box">
+    <div class="password-icon">♡</div>
+    <h1>Một chút bí mật</h1>
+    <p class="gate-sub">Nhập mật khẩu để mở món quà nhỏ dành riêng cho bạn nhé ✨</p>
+    <form id="passwordForm" class="password-row">
+      <input id="passwordInput" type="password" inputmode="numeric" maxlength="4" placeholder="••••" aria-label="Mật khẩu" autocomplete="off" required>
+      <button id="nextButton" type="submit">Next →</button>
+    </form>
+    <p id="passwordError" role="status"></p>
+  </div>
+</section>
+<main class="scene locked" id="scene">
+  <div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
+  <div class="topline">✺ &nbsp; Lung linh tháng 10 &nbsp; ✨</div>
+  <section class="hero">
+    <div class="kicker">Chúc mừng ngày</div>
+    <div class="clock">20/10</div>
+    <div class="subtitle">PHỤ NỮ VIỆT NAM</div>
+    <div class="big-heart"><svg viewBox="0 0 120 110" fill="none"><path d="M60 99 C45 80 9 59 14 34 C19 10 43 11 60 32 C78 8 103 12 107 34 C112 60 78 82 60 99Z" stroke="#ffe4a0" stroke-width="2.4" stroke-dasharray="2 4"/><path d="M60 81 C49 67 30 55 33 39 C36 26 49 28 60 42 C72 27 87 28 90 40 C94 56 72 71 60 81Z" stroke="#ffb6da" stroke-width="1.7" stroke-dasharray="2 4"/><path d="M60 99 C45 80 9 59 14 34 C19 10 43 11 60 32 C78 8 103 12 107 34 C112 60 78 82 60 99Z" stroke="#fff5ce" stroke-width=".7"/></svg></div>
+  </section>
+  <div class="word w1">Luôn xinh đẹp ✨</div><div class="word w2">Bình yên, nhẹ nhàng</div><div class="word w3">Nụ cười rạng rỡ ♡</div>
+  <div class="word w4">Hạnh phúc mãi ♡</div><div class="word w5">Thật hạnh phúc</div><div class="word w6">Mọi điều như ý ✧</div>
+  <div class="word w7">♡ Yêu thương ♡</div><div class="word w8">Rạng ngời mỗi ngày</div>
+  <div class="little-heart">♥</div>
+  <section class="card">
+    <h2>Gửi Kim Phúc</h2>
+    <p>Nhân ngày 20/10, mong em luôn được yêu thương, được nâng niu và hạnh phúc theo cách mình mong muốn.</p>
+    <p>Cảm ơn em vì đã xuất hiện, làm cuộc sống này dịu dàng và vui vẻ hơn rất nhiều.</p>
+    <div class="signature">— Chúc em luôn rạng rỡ ♡</div>
+  </section>
+  <button id="nextPageBtn" class="next-page-btn">
+  Xem tiếp ❤️
+</button>
+  <div class="counter">Miss You ♡</div>
+</main>
+<script>
+const scene=document.getElementById('scene');
+const colors=['#ffd987','#ff9fbd','#fff0cf','#ffb36e','#f4b7ff','#ffe9a8'];
+const symbols=['♥','♡','❤','✧','♥'];
+for(let i=0;i<105;i++){
+  const e=document.createElement('span');e.className='floating';
+  e.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  e.style.setProperty('--x',Math.random()*100+'%');
+  e.style.setProperty('--s',(8+Math.random()*19)+'px');
+  e.style.setProperty('--c',colors[Math.floor(Math.random()*colors.length)]);
+  e.style.setProperty('--d',(10+Math.random()*19)+'s');
+  e.style.setProperty('--delay',(-Math.random()*28)+'s');
+  e.style.setProperty('--o',(0.35+Math.random()*.55).toFixed(2));
+  e.style.setProperty('--drift',(-65+Math.random()*130)+'px');
+  scene.appendChild(e);
+}
+// Password gate: correct password is 1702.
+const passwordForm = document.getElementById('passwordForm');
+const passwordInput = document.getElementById('passwordInput');
+const passwordError = document.getElementById('passwordError');
+const passwordGate = document.getElementById('passwordGate');
+const greetingCard = document.querySelector('.card');
+
+document.getElementById('nextButton').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  const input = document.getElementById('passwordInput');
+  const gate = document.getElementById('passwordGate');
+  const scene = document.getElementById('scene');
+  const error = document.getElementById('passwordError');
+
+  if (input.value.trim() !== '1702') {
+    error.textContent = 'Mật khẩu chưa đúng, thử lại nhé ♡';
+    input.value = '';
+    input.focus();
+    return;
+  }
+
+  error.textContent = '';
+  scene.classList.remove('locked');
+  scene.classList.add('unlocked');
+
+  gate.style.display = 'none';
+
+  const card = document.querySelector('.card');
+  if (card) {
+    card.classList.add('show-words');
+  }
+});
+passwordInput.addEventListener('input', () => { passwordError.textContent = ''; });
+// Add a few tiny twinkles that pulse softly in the background.
+for(let i=0;i<42;i++){
+  const e=document.createElement('span');e.className='floating';e.textContent='•';
+  e.style.setProperty('--x',Math.random()*100+'%');e.style.setProperty('--s',(5+Math.random()*10)+'px');
+  e.style.setProperty('--c','#fff2c8');e.style.setProperty('--d',(8+Math.random()*15)+'s');
+  e.style.setProperty('--delay',(-Math.random()*20)+'s');e.style.setProperty('--o',(0.2+Math.random()*.5).toFixed(2));
+  e.style.setProperty('--drift',(-30+Math.random()*60)+'px');scene.appendChild(e);
+}
+</script>
+<script>
+document.getElementById('nextPageBtn').addEventListener('click', function () {
+  window.location.href = 'trang2.html';
+});
+</script>
+</body>
+</html>
