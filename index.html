@@ -63,7 +63,7 @@ body{font-family:Georgia,"Times New Roman",serif;color:#ffe9c3;background:#100d3
 .card.show-words .signature{animation:wordAppear .85s ease 2.25s forwards}
 @keyframes wordAppear{to{opacity:1;transform:translateY(0);filter:blur(0)}}
 
-@media(max-width:600px){.hero{top:18%}.big-heart{left:calc(50% + 80px);width:70px}.word{font-size:12px}.w1{left:2%}.w4{right:2%}.w2{left:3%}.w5{right:3%}.card{bottom:6%;padding:14px 16px}.little-heart{left:8%;bottom:30%;font-size:30px}.topline{top:10px}}
+
 </style>
 </head>
 <body>
@@ -90,7 +90,7 @@ body{font-family:Georgia,"Times New Roman",serif;color:#ffe9c3;background:#100d3
   </section>
   <div class="word w1">Luôn xinh đẹp ✨</div><div class="word w2">Bình yên, nhẹ nhàng</div><div class="word w3">Nụ cười rạng rỡ ♡</div>
   <div class="word w4">Hạnh phúc mãi ♡</div><div class="word w5">Thật hạnh phúc</div><div class="word w6">Mọi điều như ý ✧</div>
-  <div class="word w7">♡ Yêu thương ♡</div><div class="word w8">Rạng ngời mỗi ngày</div>
+  <div class="word w7">♡ Yêu thương ♡</div>
   <div class="little-heart">♥</div>
   <section class="card">
     <h2>Gửi Kim Phúc</h2>
@@ -107,14 +107,14 @@ body{font-family:Georgia,"Times New Roman",serif;color:#ffe9c3;background:#100d3
 const scene=document.getElementById('scene');
 const colors=['#ffd987','#ff9fbd','#fff0cf','#ffb36e','#f4b7ff','#ffe9a8'];
 const symbols=['♥','♡','❤','✧','♥'];
-for(let i=0;i<105;i++){
+for(let i=0;i<28;i++){
   const e=document.createElement('span');e.className='floating';
   e.textContent=symbols[Math.floor(Math.random()*symbols.length)];
   e.style.setProperty('--x',Math.random()*100+'%');
   e.style.setProperty('--s',(8+Math.random()*19)+'px');
   e.style.setProperty('--c',colors[Math.floor(Math.random()*colors.length)]);
-  e.style.setProperty('--d',(10+Math.random()*19)+'s');
-  e.style.setProperty('--delay',(-Math.random()*28)+'s');
+ e.style.setProperty('--d',(24+Math.random()*24)+'s');
+e.style.setProperty('--delay',(-Math.random()*36)+'s');
   e.style.setProperty('--o',(0.35+Math.random()*.55).toFixed(2));
   e.style.setProperty('--drift',(-65+Math.random()*130)+'px');
   scene.appendChild(e);
@@ -154,11 +154,11 @@ document.getElementById('nextButton').addEventListener('click', function (e) {
 });
 passwordInput.addEventListener('input', () => { passwordError.textContent = ''; });
 // Add a few tiny twinkles that pulse softly in the background.
-for(let i=0;i<42;i++){
+for(let i=0;i<12;i++){
   const e=document.createElement('span');e.className='floating';e.textContent='•';
-  e.style.setProperty('--x',Math.random()*100+'%');e.style.setProperty('--s',(5+Math.random()*10)+'px');
-  e.style.setProperty('--c','#fff2c8');e.style.setProperty('--d',(8+Math.random()*15)+'s');
-  e.style.setProperty('--delay',(-Math.random()*20)+'s');e.style.setProperty('--o',(0.2+Math.random()*.5).toFixed(2));
+  e.style.setProperty('--x',Math.random()*100+'%');e.style.setProperty('--c', '#fff2c8');
+e.style.setProperty('--d', (28 + Math.random() * 24) + 's');
+e.style.setProperty('--delay',(-Math.random()*32)+'s');e.style.setProperty('--o',(0.2+Math.random()*.5).toFixed(2));
   e.style.setProperty('--drift',(-30+Math.random()*60)+'px');scene.appendChild(e);
 }
 </script>
